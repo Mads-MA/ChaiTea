@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Types.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericTool.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="HapticDevice.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolCursor.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolGripper.cpp">
+      <Filter>Source Files\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiMesh.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericObject.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="HapticMaterial.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="Shapes.cpp">
+      <Filter>Source Files\World</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.hpp">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.hpp">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericTool.hpp">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolCursor.hpp">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="HapticDevice.hpp">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolGripper.hpp">
+      <Filter>Header Files\Tools</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiMesh.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericObject.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="HapticMaterial.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="World.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="Shapes.hpp">
+      <Filter>Header Files\World</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2d01fcc6-3481-476c-a629-cdd3b2e22752}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{434fdf9d-b212-4e9e-af30-dc96ec3baab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{354faeca-c07c-4f95-8de0-418dcc5ee72e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{3f4134d0-87dd-4dce-911c-2567935ab4b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tools">
+      <UniqueIdentifier>{d961943c-39a0-4a43-9e9a-48714718ee40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tools">
+      <UniqueIdentifier>{a6c2a054-7d81-4326-acc3-bcecb95d7d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\World">
+      <UniqueIdentifier>{66e17a13-f72e-4a04-a081-e889e2e1f3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\World">
+      <UniqueIdentifier>{789faac2-f250-45aa-ae2d-fe9c197eb8d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+</Project>

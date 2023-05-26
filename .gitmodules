@@ -4,3 +4,4 @@
 [submodule "UnityCsReference"]
 	path = UnityCsReference
 	url = .\\external\\UnityCsReference\\
+	branch = 2021.3
