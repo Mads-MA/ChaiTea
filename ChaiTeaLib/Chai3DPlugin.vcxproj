@@ -127,7 +127,7 @@
       <ConformanceMode>false</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\external\CHAI3D\modules\ODE\external\ODE\include;..\external\CHAI3D\modules\ODE\src;..\external\CHAI3D\src;..\external\CHAI3D\extras\GLFW\include;..\external\CHAI3D\external\glew\include;..\external\CHAI3D\external\Eigen;..\..\external\CHAI3D\modules\ODE\external\ODE\include;..\..\external\CHAI3D\modules\ODE\src;G:\git\application\external\CHAI3D\src;..\..\external\CHAI3D\src;..\..\external\CHAI3D\extras\GLFW\include;..\..\external\CHAI3D\external\glew\include;..\..\external\CHAI3D\external\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\external\CHAI3D\src;..\external\CHAI3D\extras\GLFW\include;..\external\CHAI3D\external\glew\include;..\external\CHAI3D\external\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp14</LanguageStandard>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <AdditionalOptions>-INCLUDE:?warp_size@cuda@at@@YAHXZ %(AdditionalOptions)</AdditionalOptions>
@@ -136,7 +136,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>..\external\CHAI3D\modules\ODE\lib\$(Configuration)\$(Platform);..\external\CHAI3D\extras\GLFW\lib\$(Configuration)\$(Platform);..\external\CHAI3D\lib\$(Configuration)\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\external\CHAI3D\extras\GLFW\lib\$(Configuration)\$(Platform);..\external\CHAI3D\lib\$(Configuration)\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>chai3d.lib;glfw.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -150,7 +150,7 @@
       <ConformanceMode>false</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\external\CHAI3D\modules\ODE\external\ODE\include;..\external\CHAI3D\modules\ODE\src;..\external\CHAI3D\src;..\external\CHAI3D\extras\GLFW\include;..\external\CHAI3D\external\glew\include;..\external\CHAI3D\external\Eigen;G:\git\application\external\CHAI3D\src;..\..\external\CHAI3D\src;..\..\external\CHAI3D\extras\GLFW\include;..\..\external\CHAI3D\external\glew\include;..\..\external\CHAI3D\external\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\external\CHAI3D\src;..\external\CHAI3D\extras\GLFW\include;..\external\CHAI3D\external\glew\include;..\external\CHAI3D\external\Eigen;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <LanguageStandard>stdcpp14</LanguageStandard>
     </ClCompile>
@@ -160,8 +160,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalLibraryDirectories>..\external\CHAI3D\modules\ODE\lib\$(Configuration)\$(Platform);..\external\CHAI3D\extras\GLFW\lib\$(Configuration)\$(Platform);..\external\CHAI3D\lib\$(Configuration)\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>chai3d.lib;glfw.lib;opengl32.lib;chai3d-ODE.lib;glu32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\external\CHAI3D\extras\GLFW\lib\$(Configuration)\$(Platform);..\external\CHAI3D\lib\$(Configuration)\$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>chai3d.lib;glfw.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
