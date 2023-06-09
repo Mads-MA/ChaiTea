@@ -4,8 +4,8 @@ ChaiTea is a library that exposes the haptic framework Chai3D to the game engine
 Examples of using ChaiTea in Unity can be found [here](https://github.com/Mads-MA/ChaiTea-Examples).
 
 # Building
-ChaiTea depends on [Chai3D](https://www.chai3d.org/) and [UnityCsReference](https://github.com/Unity-Technologies/UnityCsReference).
-These are included as submodules, but still need to be built.
+ChaiTea depends on [Chai3D](https://www.chai3d.org/) and [UnityCsReference](https://github.com/Unity-Technologies/UnityCsReference), which are included as submodules.
+Run `git submodule init` & `git submodule update` to download the submodules.
 
 ## Chai3d
 Open CHAI3D-VS2015.sln in ./external/chai3d
