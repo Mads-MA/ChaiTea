@@ -1,18 +1,19 @@
 # ChaiTea
+ChaiTea is a library that exposes the haptic framework Chai3D to the game engine Unity3D. 
 
-# Dependencies
-Dependencies are included as GIT submodules.
+Examples of using ChaiTea in Unity can be found [here](https://github.com/Mads-MA/ChaiTea-Examples).
+
+# Building
+ChaiTea depends on [Chai3D](https://www.chai3d.org/) and [UnityCsReference](https://github.com/Unity-Technologies/UnityCsReference), which are included as submodules.
+Run `git submodule init` & `git submodule update` to download the submodules.
 
 ## Chai3d
-You must compile Chai3D from scratch. 
-To do this you will need to open CHAI3D-VS2015.sln. 
-You must edit project properties of each project in this solution. 
-It may ask you to do this when you open the solution. Otherwise do as said below.
-For ease of doing this, select all projects and then right click on these.
-This will open a page with "General Properties", here you must select "Visual Studio 2022 (v143)" under "Platform Toolset".
+Open CHAI3D-VS2015.sln in ./external/chai3d
+For each project you may need to change the project property "Platform Toolset" to "Visual Studio 2022 (v143)" under General Properties.
 
 Now build both Release and Debug targets with x64.
 
-## UnityCSReference
+## UnityCsReference
 You will also need to build this dependency. 
-The C# solution is in Projects/CSharp/UnityReferenceSource.sln
+Open the C# solution is in Projects/CSharp/UnityReferenceSource.sln and build it. 
+
