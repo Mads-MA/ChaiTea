@@ -110,6 +110,12 @@
     <Filter Include="Source Files\World">
       <UniqueIdentifier>{789faac2-f250-45aa-ae2d-fe9c197eb8d4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Dynamics">
+      <UniqueIdentifier>{6d1f51dc-a3af-4ae6-9842-ad5627eedf2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dynamics">
+      <UniqueIdentifier>{cf6bc53d-5230-4bd4-8431-78c3a771f142}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp.hint" />

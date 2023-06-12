@@ -16,7 +16,6 @@ extern "C" {
 	DllExport void GenericTool_Stop(chai3d::cGenericTool* pTool);
 
 	DllExport bool GenericTool_IsbuttonPressed(chai3d::cGenericTool* pTool, int buttonID);
-	DllExport void GenericTool_SetDeviceGlobalForce(chai3d::cToolCursor* tool, Vec3 force);
 
 	DllExport void GenericTool_ComputeInteractionForces(chai3d::cGenericTool* pTool);
 	DllExport void GenericTool_ApplyToDevice(chai3d::cGenericTool* pTool);
@@ -25,8 +24,12 @@ extern "C" {
 	DllExport void GenericTool_WaitForSmallForce(chai3d::cGenericTool* pTool, bool wait);
 
 
-	//Transform
-	DllExport Vec4 GenericTool_GetDeviceGlobalRotation(chai3d::cGenericTool* tool);
+	//DeviceState
+	DllExport Vec4 GenericTool_GetDeviceGlobalRotation(chai3d::cGenericTool* pTool);
+	DllExport void GenericTool_SetDeviceGlobalForce(chai3d::cGenericTool* pTool, Vec3 force);
+	DllExport Vec3 GenericTool_GetDeviceGlobalForce(chai3d::cGenericTool* pTool);
+	DllExport Vec3 GenericTool_GetDeviceGlobalPosition(chai3d::cGenericTool* pTool);
+	DllExport void GenericTool_SetDeviceGlobalPosition(chai3d::cGenericTool* pTool, Vec3 position);
 
 
 	DllExport double GenericTool_WorkspaceScaleFactor(chai3d::cGenericTool* tool);
@@ -42,12 +45,6 @@ extern "C" {
 	DllExport chai3d::cGenericObject* CollisionEvent_GetCollisionObject(chai3d::cCollisionEvent* collisionEvent);
 	DllExport Vec3 CollisionEvent_GetGlobalPosition(chai3d::cCollisionEvent* collisionEvent);
 
-	//Extension methods
-	DllExport Transform GenericTool_GetDeviceGlobalTransform(chai3d::cToolCursor* tool);
-	DllExport void GenericTool_SetDeviceGlobalForce(chai3d::cToolCursor* tool, Vec3 force);
-	DllExport Vec3 GenericTool_GetDeviceGlobalForce(chai3d::cToolCursor* tool);
-
-	DllExport Transform GenericTool_ToolToObjectTransform(chai3d::cToolCursor* tool, chai3d::cGenericObject* object);
 #ifdef __cplusplus
 }
 #endif

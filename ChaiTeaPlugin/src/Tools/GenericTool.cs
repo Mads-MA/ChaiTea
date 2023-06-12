@@ -34,6 +34,11 @@ namespace ChaiTea
             GenericTool_SetDeviceGlobalForce(ptr, force);
         }
 
+        public Vector3 GetDeviceForce()
+        {
+            return GenericTool_GetDeviceGlobalForce(ptr);
+        }
+
         public bool GetButtonState(int buttonIndex)
         {
             return GenericTool_IsButtonPressed(ptr, buttonIndex);
@@ -65,6 +70,15 @@ namespace ChaiTea
             GenericTool_WaitForSmallForce(ptr, wait);
         }
 
+        public virtual void SetDevicePosition(Vector3 position)
+        {
+            GenericTool_SetDeviceGlobalPosition(ptr, position);
+        }
+
+        public virtual Vector3 GetDevicePosition()
+        {
+            return GenericTool_GetDeviceGlobalPosition(ptr);
+        }
 
         [DllImport("ChaiTeaLib", EntryPoint = "GenericTool_UpdateFromDevice")]
         protected static extern void GenericTool_UpdateFromDevice(IntPtr pTool);
@@ -80,6 +94,11 @@ namespace ChaiTea
 
         [DllImport("ChaiTeaLib", EntryPoint = "GenericTool_SetDeviceGlobalForce")]
         protected static extern void GenericTool_SetDeviceGlobalForce(IntPtr pTool, Vec3 force);
+
+
+        [DllImport("ChaiTeaLib", EntryPoint = "GenericTool_GetDeviceGlobalForce")]
+        protected static extern Vec3 GenericTool_GetDeviceGlobalForce(IntPtr pTool);
+
 
         [DllImport("ChaiTeaLib", EntryPoint = "GenericTool_WaitForSmallForce")]
         protected static extern void GenericTool_WaitForSmallForce(IntPtr pTool, bool wait);
@@ -105,45 +124,12 @@ namespace ChaiTea
         [DllImport("ChaiTeaLib", EntryPoint = "GenericTool_SetToolRadius")]
         protected static extern void GenericTool_SetToolRadius(IntPtr pTool, double toolRadius);
 
-        //Transform
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_GetDeviceGlobalRotation")]
-        //protected static extern Vec4 Tool_GetDeviceGlobalRotation(IntPtr pTool);
 
-        ////
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_ConfigureCursor")]
-        //protected static extern bool Tool_ConfigureCursor(IntPtr pTool, int deviceIndex, double workspaceRadius, double toolRadius, bool enableDynamicObjects, bool allowVirtualDevice = false);
-
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_WorkspaceScaleFactor")]
-        //protected static extern double Tool_WorkspaceScaleFactor(IntPtr pTool);
+        [DllImport("ChaiTeaLib", EntryPoint = "GenericTool_SetDeviceGlobalPosition")]
+        protected static extern void GenericTool_SetDeviceGlobalPosition(IntPtr pTool, Vec3 position);
 
 
-        ////Checks whether button on tool, at buttonID/index, is pressed or not
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_IsbuttonPressed")]
-        //protected static extern bool Tool_IsButtonPressed(IntPtr pTool, int buttonID);
-
-        ////Get number of haptic points on tool
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_GetNumHapticPoints")]
-        //protected static extern int Tool_GetNumHapticPoints(IntPtr pTool);
-
-        ////Returns HapticPoint at index of given tool
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_GetHapticPoint")]
-        //protected static extern IntPtr Tool_GetHapticPoint(IntPtr pTool, int hapticPointIndex);
-
-        ////Set force of device
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_SetDeviceGlobalForce")]
-        //protected static extern void Tool_SetDeviceGlobalForce(IntPtr pTool, Vec3 force);
-
-        ////Get force applied to device
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_GetDeviceGlobalForce")]
-        //protected static extern Vec3 Tool_GetDeviceGlobalForce(IntPtr pTool);
-
-        ////Get global transform of device. Not corrected for Unity's coordinate system
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_GetDeviceGlobalTransform")]
-        //protected static extern ChaiTransform Tool_GetDeviceGlobalTransform(IntPtr pTool);
-
-
-        //[DllImport("ChaiTeaLib", EntryPoint = "Tool_ToolToObjectTransform")]
-        //protected static extern ChaiTransform Tool_ToolToObjectTransform(IntPtr pTool, IntPtr pObject);
-
+        [DllImport("ChaiTeaLib", EntryPoint = "GenericTool_GetDeviceGlobalPosition")]
+        protected static extern Vec3 GenericTool_GetDeviceGlobalPosition(IntPtr pTool);
     }
 }

@@ -18,11 +18,6 @@ namespace ChaiTea
             return ToolCursor_GetProxyPosition(ptr);
         }
 
-        public Vector3 GetDevicePosition()
-        {
-            return ToolCursor_GetDevicePosition(ptr);
-        }
-
         
         [DllImport("ChaiTeaLib", EntryPoint = "ToolCursor_Create")]
         public static extern IntPtr ToolCursor_Create(IntPtr pWorldObject, int deviceIndex);

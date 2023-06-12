@@ -15,6 +15,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Debug\**" />
+    <Compile Remove="Release\**" />
+    <EmbeddedResource Remove="Debug\**" />
+    <EmbeddedResource Remove="Release\**" />
+    <None Remove="Debug\**" />
+    <None Remove="Release\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>..\external\UnityCsReference\Projects\CSharp\obj\Debug\UnityEngine.dll</HintPath>
       <Private>False</Private>

@@ -109,35 +109,26 @@ extern "C" {
         return globalPosition;
     }
 
-
-    //Todo this cannot be optimal, research alternatives
-    Transform GenericTool_GetDeviceGlobalTransform(cToolCursor* tool)
-    {
-        cTransform toolTransform = tool->getDeviceGlobalTransform();
-        return Chai3dTransformToUnityTransform(toolTransform);
-    }
-
-    void GenericTool_SetDeviceGlobalForce(cToolCursor* tool, Vec3 force)
+    void GenericTool_SetDeviceGlobalForce(cGenericTool* tool, Vec3 force)
     {
         cVector3d cForce = ConvertXYZToCHAI3D(force);
         tool->setDeviceGlobalForce(cForce);
     }
 
-    Vec3 GenericTool_GetDeviceGlobalForce(cToolCursor* tool)
+    Vec3 GenericTool_GetDeviceGlobalForce(cGenericTool* tool)
     {
         cVector3d force = tool->getDeviceGlobalForce();
         return ConvertXYZToUnity(force);
     }
-
-    Transform GenericTool_ToolToObjectTransform(cToolCursor* tool, cGenericObject* object)
+    Vec3 GenericTool_GetDeviceGlobalPosition(chai3d::cGenericTool* pTool)
     {
-        cTransform worldToObject = object->getGlobalTransform();
-        
-        //inverse transformation from contact point to object
-        cTransform toolToWorld = tool->getDeviceGlobalTransform();
-        toolToWorld.invert();
-        cTransform toolToObject = toolToWorld * worldToObject;
-
-        return Chai3dTransformToUnityTransform(toolToObject);
+        cVector3d position = pTool->getDeviceGlobalPos();
+        return ConvertXYZToUnity(position);
+    }
+    
+    void GenericTool_SetDeviceGlobalPosition(chai3d::cGenericTool* pTool, Vec3 position)
+    {
+        cVector3d cPos = ConvertXYZToCHAI3D(position);
+        pTool->setDeviceGlobalPos(cPos);
     }
 }
