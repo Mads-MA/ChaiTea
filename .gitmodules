@@ -1,0 +1,6 @@
+[submodule "external/chai3d"]
+	path = external/chai3d
+	url = https://github.com/chai3d/chai3d
+[submodule "external/UnityCsReference"]
+	path = external/UnityCsReference
+	url = https://github.com/Unity-Technologies/UnityCsReference
