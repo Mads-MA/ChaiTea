@@ -1,7 +1,0 @@
-[submodule "chai3d"]
-	path = chai3d
-	url = .\\external\\chai3d\\
-[submodule "UnityCsReference"]
-	path = UnityCsReference
-	url = .\\external\\UnityCsReference\\
-	branch = 2021.3
